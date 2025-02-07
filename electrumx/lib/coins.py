@@ -1279,9 +1279,9 @@ class Shibacoin(AuxPowMixin, Coin):
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("02fadafe")
     XPRV_VERBYTES = bytes.fromhex("02fac495")
-    P2PKH_VERBYTE = bytes.fromhex("63")
-    P2SH_VERBYTES = (bytes.fromhex("22"),)
-    WIF_BYTE = bytes.fromhex("158")
+    P2PKH_VERBYTE = bytes.fromhex("3F")
+    P2SH_VERBYTES = (bytes.fromhex("16"),)
+    WIF_BYTE = bytes.fromhex("9E")
     GENESIS_HASH = ('ff271edcc83f7d71e7a4e4b0a43b386a'
                     '188e1470a28671cdbdc47e900118ac7f')
     PEERS = [
