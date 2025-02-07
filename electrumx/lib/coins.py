@@ -1290,7 +1290,7 @@ class Shibacoin(AuxPowMixin, Coin):
     TX_COUNT = 100857
     TX_COUNT_HEIGHT = 45008
     TX_PER_BLOCK = 1
-    RPC_PORT = 33864
+    RPC_PORT = 33863
     REORG_LIMIT = 100000
     DESERIALIZER = lib_tx.DeserializerAuxPowSegWit
 
