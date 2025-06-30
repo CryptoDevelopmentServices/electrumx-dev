@@ -1294,6 +1294,30 @@ class Shibacoin(AuxPowMixin, Coin):
     REORG_LIMIT = 100000
     DESERIALIZER = lib_tx.DeserializerAuxPowSegWit
 
+class Aegisum(Coin):
+    NAME = "Aegisum"
+    SHORTNAME = "AEGS"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("18")
+    P2SH_VERBYTES = (bytes.fromhex("17"), bytes.fromhex("05"))
+    WIF_BYTE = bytes.fromhex("97")
+    GENESIS_HASH = ('d01de46801bba7913c039b4feabb4287'
+                    '8e0a3e24ceef2365ed2a8d780c5aa9cd')
+    PEERS = [
+        'node.aegisum.com s t',
+        'node1.aegisum.com s t',
+        'node2.aegisum.com s t',
+        'pool.aegisum.com s t',
+    ]
+    TX_COUNT = 55139
+    TX_COUNT_HEIGHT = 34500
+    TX_PER_BLOCK = 1.6
+    RPC_PORT = 39940
+    REORG_LIMIT = 100000
+    DESERIALIZER = lib_tx.DeserializerLitecoin
+
 
 class Dogecoin(AuxPowMixin, Coin):
     NAME = "Dogecoin"
