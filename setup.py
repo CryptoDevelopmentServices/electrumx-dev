@@ -48,9 +48,9 @@ setuptools.setup(
     author='Electrum developers',
     author_email='electrumdev@gmail.com',
     license='MIT Licence',
-    url='https://github.com/CryptoDevelopmentServices/electrumx-shic',
+    url='https://github.com/CryptoDevelopmentServices/electrumx-dev',
     long_description='Server implementation for the Electrum protocol',
-    download_url=('https://github.com/CryptoDevelopmentServices/electrumx-shic/archive/'
+    download_url=('https://github.com/CryptoDevelopmentServices/electrumx-dev/archive/'
                   f'{version}.tar.gz'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
